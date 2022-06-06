@@ -12,10 +12,10 @@ But before I could do that, I had to get my code to run on the drones.
 
 ### Running the Scripts
 
-The way JDE Drones works is that we have a widget that allows us to control most aspects of the drone. ![Drones Widget](../_assets/drones-widget.png)
+The way JDE Drones works is that we have a widget that allows us to control most aspects of the drone. ![Drones Widget](/gsoc2022-Toshan_Luktuke/docs/_assets/drones-widget.png)
 
 What we have to do is write our code in the `my_solution.py` file 
-![Example of file structure](/gsoc2022-Toshan_Luktuke/_assets/my_solution_file.png)
+![Example of file structure](/gsoc2022-Toshan_Luktuke/docs/_assets/my_solution_file.png)
 
 and click on the `Play Code` button after takeoff of the drone to run our code.
 
@@ -23,7 +23,7 @@ This worked well enough for the exercises, `drone_gymkhana`, `follow_road` and `
 
 ### Problem and Solution
 
-When this happened I was quite confused. Since all of my other exercises were working properly I had come to the conclusion that all of my installs were done correctly. In this case I had no idea what exactly was going wrong, I got a hint by using `rostopic echo`. The output consisted of topics that were pre-fixed by `cat/` or `mouse/`, for each drone respectively. ![Rostopic output](../_assets/cat_mouse_rostopic_list.png)
+When this happened I was quite confused. Since all of my other exercises were working properly I had come to the conclusion that all of my installs were done correctly. In this case I had no idea what exactly was going wrong, I got a hint by using `rostopic echo`. The output consisted of topics that were pre-fixed by `cat/` or `mouse/`, for each drone respectively. ![Rostopic output](/gsoc2022-Toshan_Luktuke/docs/_assets/cat_mouse_rostopic_list.png)
 
 The difference here was that each drone had the namespace prefixed to its topic. The namespace was `cat/` or `mouse/`. When initializing the `DroneWrapper()` class in `my_solution.py` we had to pass the namespace to the class as a parameter.
 
