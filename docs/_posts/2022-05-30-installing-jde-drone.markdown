@@ -73,5 +73,11 @@ Next, I had to launch `drone_cat_and_mouse`, here there was another error saying
 ```bash
 sudo apt install xmlstarlet
 ```
- The exercise launched fine after this.  
+ The exercise launched fine after this. 
+
+ However there is a warning that frequently pops up on the terminal for most of these exercises. In order to silence that warning, simply do this
+
+ ```bash
+ roslaunch follow_road.launch 2> >(grep -v TF_REPEATED_DATA ignore)
+ ``` 
 
