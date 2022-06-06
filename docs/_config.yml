@@ -21,9 +21,8 @@
 title: Toshan's GSoC Log
 email: toshan1603@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is where I'll be updating my GSoC Progress each week. I'll
+  also be using this blog to keep a track of errors I encounter and how I solve them.
 baseurl: "/gsoc2022-Toshan_Luktuke" # the subpath of your site, e.g. /blog
 url: "https://theroboticsclub.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TLuktuke
