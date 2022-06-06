@@ -15,7 +15,7 @@ But before I could do that, I had to get my code to run on the drones.
 The way JDE Drones works is that we have a widget that allows us to control most aspects of the drone. ![Drones Widget](../_assets/drones-widget.png)
 
 What we have to do is write our code in the `my_solution.py` file 
-![Example of file structure](../_assets/my_solution_file.png) 
+![Example of file structure](/gsoc2022-Toshan_Luktuke/_assets/my_solution_file.png)
 
 and click on the `Play Code` button after takeoff of the drone to run our code.
 
