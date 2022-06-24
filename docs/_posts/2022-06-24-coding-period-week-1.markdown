@@ -34,6 +34,8 @@ The main focus for next week will be on solving the issues encountered this week
 ### Solution Videos
 
 #### Visual Lander
+<iframe width="560" height="315" src="https://www.youtube.com/embed/17KqUHMvlxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Labyrinth Escape
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UNzP1DVKK04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
