@@ -11,6 +11,10 @@ The major work done this week consisted mainly of improving the solution to the 
 
 I solved it using Visual Circuit as well, however due to a bug where string outputs weren't being transmitted between blocks the solution made using Visual Circuit was quite crude and didn't utilise blocks as well as it could have.
 
+![Crude Labyrinth Escape]()
+
+
+
 I also came up some ideas for new blocks that could be added to Visual Circuit:
 - RQT block that open the vel-teleop and camera widget of Jde Drones
 - IMU sensor 
