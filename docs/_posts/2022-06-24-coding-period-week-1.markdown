@@ -15,15 +15,15 @@ Namely, I wasn't able to get string outputs to be shared between blocks. To solv
 
 Following that I started changing the old solutions that I had made to better utilise the **block design** of Visual Circuit. The diagrams of the solutions to Visual Lander and Labyrinth Escape are as follows:
 
-![Visual Lander](/docs/assets/visual_lander_diagram.png) 
+![Visual Lander](/gsoc2022-Toshan_Luktuke/assets/visual_lander_diagram.png) 
 
-![Labyrinth Escape](/docs/assets/labyrinth_escape_diagram.png)
+![Labyrinth Escape](/gsoc2022-Toshan_Luktuke/assets/labyrinth_escape_diagram.png)
 
 I noted a few bugs during this whole process namely:
 - The files in staticfiles should be moved to the static folder
 - Having multiple blocks of the same type causes them to be built with the same name e.g.:
 
-![Multiple Blocks Bug](/docs/assets/same_name_bug.png)
+![Multiple Blocks Bug](/gsoc2022-Toshan_Luktuke/assets/same_name_bug.png)
 
 ### Goals for Next Week
 The main focus for next week will be on solving the issues encountered this week:
