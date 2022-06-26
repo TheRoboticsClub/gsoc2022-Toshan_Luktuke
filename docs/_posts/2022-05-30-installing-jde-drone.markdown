@@ -7,6 +7,8 @@ categories: gsoc
 Getting started with my GSoC period, one of my goals during the project was to make drone applications using Visual Circuit.
 [JdeRobot's Academy](http://jderobot.github.io/RoboticsAcademy/) already has some great exercises related to drones and their basic concepts, my job was to get a solution running using Visual Circuit.
 
+![Drone Exercises](/gsoc2022-Toshan_Luktuke/assets/academy_drones.png)
+
 The challenge here was to get the exercises running locally on my system. This is because drone based exercises are usually very complicated to get running, with a lot of packages and dependencies there are many areas where one can mess up an installation. 
 Unfortunately a lot of JdeRobot's support for these exercises is moved online onto their Docker Image, while it is a great way for newcomers to get the exercises running with little or no difficulty, it wasn't going to work for me.
 
@@ -24,6 +26,8 @@ In the following blog I'm going to be describing how I got these exercises runni
 <td>Noetic</td>
 </tr>
 </table>
+
+![Neofetch Output](/gsoc2022-Toshan_Luktuke/assets/neofetch_output.png)
 
 ### The Process
 To start with I followed [this](https://github.com/JdeRobot/drones/blob/noetic-devel/installation20.md) guide on the JdeRobot drones repo. 
@@ -81,3 +85,5 @@ sudo apt install xmlstarlet
  roslaunch follow_road.launch 2> >(grep -v TF_REPEATED_DATA ignore)
  ``` 
 
+Image of warning:
+![Repeated Data Warning](/gsoc2022-Toshan_Luktuke/assets/repeated_data_warning.png)

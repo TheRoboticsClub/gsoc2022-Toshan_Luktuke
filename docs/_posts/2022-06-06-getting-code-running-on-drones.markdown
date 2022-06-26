@@ -37,3 +37,6 @@ The above code was what I needed to get the `my_solution.py` file to execute.
 I'm still thinking of a solution to get the widget working. One way is to go into the `drone_vel_teleop` class manually and set the default namespace as `cat/`. However this isn't really a long term solution to the problem.
 
 This blog will be updated if I find a way to get the widget working well. For the time being however my current method is enough to solve the exercise.
+
+Example of Follow Road Working:
+![Follow Road](/gsoc2022-Toshan_Luktuke/assets/follow_road.png)
