@@ -75,3 +75,20 @@ For e.g. in order to share an image we had to write `share_image(...)`, similarl
 
 This was something that could be improved to make it simpler for the users. 
 The reason this was done separately was that while sharing something we have its data type, hence it can be general purpose, however while reading it we don't know what kind of data type we'll be getting hence the need for specific functions. We need the exact data type while reading because when the Shared Memory Buffer is read it is specific for the supplied data type.
+
+The solution was creating a new buffer that contains the type of the data being supplied. Since numpy had data type strings of type `"<i8"`, `"<U6"` etc. We simply make a new object to store the data type of whatever data is being supplied, since this data is always stored in a String format it is known how to decode it on the read end. Then once we have the data type we can use it to decode the actual data. 
+
+This solution had a few bugs in it as well namely what would happen when the data type changed? This was an issue especially with the string data types. Usually numpy gives a data type of `"<U1"` to a string that has only one character. However even when the number of characters increases, as this data type doesn't change we can only read one character. 
+
+There were again two approaches I tried to fix this issue:
+1. Simply allocating a larger buffer by default to the data types
+2. Overwriting the buffer whenever the data type changed
+
+After discussing with my mentors, we decided to go with approach no. 1 as it was faster than the second one.  
+
+## Issues
+No new issues were raised this week.
+
+## Pull Requests
+- [Add a block to process data from an IMU](https://github.com/JdeRobot/VisualCircuit/pull/171)
+- [Add functions to share any type of data](https://github.com/JdeRobot/VisualCircuit/pull/173)
