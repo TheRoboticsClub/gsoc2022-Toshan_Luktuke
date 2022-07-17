@@ -5,7 +5,7 @@ date:   2022-07-10 12:08:00 +0530
 categories: gsoc
 ---
 
-## Major Tasks
+This week I finally finished the remaining templates from last week. I also managed to upload my created videos to the JdeRobot YouTube Channel.  
 
 ### Template Updation
 Continuing from where I left off last week, this week I finished all the remaining template blocks. A list of them would be Teleoperator, PID, MotorDriver, ObjectDetector, ROSCamera and Odometer. 

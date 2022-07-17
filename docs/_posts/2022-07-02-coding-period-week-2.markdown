@@ -5,7 +5,7 @@ date:   2022-07-02 11:46:00 +0530
 categories: gsoc
 ---
 
-## Major Tasks
+This week was about identifying and solving some bugs I had noticed during usage of the tool. I also started with the work template updation.
 
 ### Collectstatic
 Going by the goals set last week and the advice of Suhas the first thing I did was to research the `collectstatic` step in the install.
