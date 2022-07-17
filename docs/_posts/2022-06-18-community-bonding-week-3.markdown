@@ -11,7 +11,7 @@ The major work done this week consisted mainly of improving the solution to the 
 
 I solved it using Visual Circuit as well, however due to a bug where string outputs weren't being transmitted between blocks the solution made using Visual Circuit was quite crude and didn't utilise blocks as well as it could have.
 
-![Crude Labyrinth Escape]()
+![Crude Labyrinth Escape](/gsoc2022-Toshan_Luktuke/assets/crude_laby_escape.png)
 
 
 
