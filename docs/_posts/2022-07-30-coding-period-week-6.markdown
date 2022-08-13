@@ -32,7 +32,7 @@ While giving a demo of some blocks I found that the Threshold block was incorrec
 ![Example of a shrunken block]()
 
 
-On an unrelated note, the Mid-Term evaluations of GSoC were this week. Quite happy that my project is on track and that I don't have to worry about it too much. Continued consistent work seems to pay off.
+On an unrelated note, the Mid-Term evaluations of GSoC were this week. Quite happy that the project is on track!
 
 ## Issues
 No new Issues were raised this week
