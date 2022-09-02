@@ -165,10 +165,10 @@ analytics:
 # Site Author
 author:
   name             : "Toshan Luktuke"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/Toshan.png"
   bio              : "Coding, Building, Exploring."
   location         : "Mumbai"
-  email            :
+  email            : "toshan1603@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
