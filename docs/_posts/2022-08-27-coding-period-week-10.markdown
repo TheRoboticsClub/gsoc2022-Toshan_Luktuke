@@ -45,8 +45,6 @@ def main(inputs, outputs, parameters, fsm, condition, synchronise):
         while True:
             if fsm.value == 1 or IS_INITIAL:
                 IS_INITIAL = False
-                # n = spiral(motors, bumper)
-                # inputs.enabled = False
                 print("Block 1 is executing ...")
                 sleep(1)
                 outputs.share_number('o', 2)
