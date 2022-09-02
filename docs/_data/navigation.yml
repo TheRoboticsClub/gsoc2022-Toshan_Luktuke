@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: "/gsoc"
+    url: "/"
   - title: "About"
     url: /about/
   - title: "Github"
