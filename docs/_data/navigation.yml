@@ -1,11 +1,11 @@
 # main links
 main:
   - title: "Home"
-    url: "/"
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+    url: "/gsoc"
+  - title: "About"
+    url: /about/
+  - title: "Github"
+    url: https://github.com/JdeRobot/VisualCircuit/tree/master
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
