@@ -11,5 +11,11 @@ Going by the suggestions of my mentors, I spent this week working on the documen
 
 After a meet with my mentors, I spent some time organising the documentations files. Then I changed the theme to dark mode to go with the overall look of Visual Circuit Website. Once that was done I made a Pull Request integrating the changes to the `docs` branch of the repo.
 
-Next we'll merge it with the main website. However, I have to make some decisions about how to update the docstrings in the actual JSON files.
+Next we'll merge it with the main website. However, I have to make some decisions about how to update the docstrings in the actual JSON files. Namely there's still the issue of updating all of the docstrings in the template files themselves.
+
+Additionaly if we are to add some extra info the docs by ourselves, it'll be lost when the updating script is run. In this case it makes sense to have a separate repo somewhere with all the documentation data.
+
+## Blog updates
+
+I updated this blog a bit as well, adding some images, descriptions and generally just improving its look a bit in this week.
 

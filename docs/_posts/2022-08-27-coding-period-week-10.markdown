@@ -5,7 +5,7 @@ date:   2022-08-27 21:55:00 +0530
 categories: gsoc
 ---
 
-This week I looked into MultiProcessing Conditions and finished the video of the FSM. 
+This week I looked into MultiProcessing Conditions and finished the video of the FSM.
 
 ## Video
 
@@ -55,4 +55,4 @@ def main(inputs, outputs, parameters, fsm, condition, synchronise):
             synchronise()
 ```
 
-Note that the above block was made as a test for how the Conditions worked together with `sleep` statements
+Note that the above block was made as a test for how the Conditions worked together with `sleep` statements. However this method didn't exactly achive the 'Visual' aspect of Visual Circuit's goal. We've decided to look into a way to integrate the Multiprocessing Values with the Visual Circuit interface, maybe by using it as a block?
