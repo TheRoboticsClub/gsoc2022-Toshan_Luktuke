@@ -1066,7 +1066,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* ========================================================================== ARCHIVE ========================================================================== */
 .archive { margin-top: 1em; margin-bottom: 2em; }
 @media (min-width: 64em) { .archive { float: right; width: calc(100% - 200px); padding-right: 200px; } }
-@media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 100px; } }
+@media (min-width: 80em) { .archive { width: calc(100% - 200px); padding-right: 300px; } }
 
 .archive__item { position: relative; }
 .archive__item a { position: relative; z-index: 10; }
