@@ -121,7 +121,7 @@ atom_feed:
   hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # (default), algolia, google
 lunr:
   search_within_pages    : true # true, false (default)
 algolia:
@@ -141,7 +141,7 @@ baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -164,18 +164,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Toshan Luktuke"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Coding, Building, Exploring."
+  location         : "Mumbai"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:toshan1603@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://toshan-luktuke.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -184,7 +184,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/toshan-luktuke"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -200,7 +200,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/toshan-luktuke"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
