@@ -17,7 +17,7 @@ I started learning about Jinja and after some time I could add the block images 
 
 I did this by using the inbuilt svg code from the json file. I used it as a sort of dictionary depending on the page the user was on to display the image/
 
-```jinja
+```
 {% block body %}
 {% set currentblock = module.modulename.split(".")[-1].replace("%20", "") %}
 <!-- Adds the block image to the right hand side of the page -->
