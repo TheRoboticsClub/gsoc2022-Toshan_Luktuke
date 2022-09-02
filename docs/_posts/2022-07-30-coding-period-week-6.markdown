@@ -14,7 +14,7 @@ Still, I managed to make some progress on last week's goals.
 I continued work on the FSM, I realized that the old block model I was using was unsustainable. This was due to a flaw in which all of the states were not updated, i.e. when the control moved from block 0 -> block 1 -> block 2 the state changes from 0 -> 1 -> 2. However block 1 will keep supplying state 1 to block 2 even though block 2 supplies 0 to block 0, this cause block 2 to repeatedly execute.
 
 To fix this I switched to a Master-Controller relationship between the blocks as suggessted by my mentors last week. This involved having one block just to oversee the state and control the other blocks, the diagram looked something like this:
-![Block Diagram Master-Controller]()
+![Block Diagram Master-Controller](/gsoc2022-Toshan_Luktuke/assets/master-controller.png)
 
 After this implementation I was able to get the Vacuum Cleaner implementation working the way it was intended. However there were certain cases in which it showed erratic behavior still. I showed it to my mentors and the conclusion seemed to be that the multiprocessing aspect of the application was causing some unexpected behavior. To fix this I suggested having a lock for the process what was currently being executed, however we did not come to a fixed conclusion about this issue.
 
@@ -29,7 +29,7 @@ Perhaps, not 100% sure about it yet.
 
 While giving a demo of some blocks I found that the Threshold block was incorrectly saved in the Tool, that will be fixed in a PR soon. Aside from that I identified what was causing the bug of the blocks opening with very small sizes. Apparently while saving the blocks their size was saved incorrectly. By editing these values in the JSON I was able to restore them to a normal size. This meant that would open in the correct size by default and the user would not have to spend time trying to re-size them.
 
-![Example of a shrunken block]()
+![Example of a shrunken block](/gsoc2022-Toshan_Luktuke/assets/shrunken-block.png)
 
 
 On an unrelated note, the Mid-Term evaluations of GSoC were this week. Quite happy that the project is on track!

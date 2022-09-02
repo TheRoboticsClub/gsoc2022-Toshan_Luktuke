@@ -16,7 +16,7 @@ categories: gsoc
 
  My approach to the FSM was as follows:
 
- ![Insert Image here soon]()
+ ![Insert Image here soon](/gsoc2022-Toshan_Luktuke/assets/fsm-diagram.png)
 
  With 3 main states
 
