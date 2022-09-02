@@ -11,6 +11,8 @@ This week I looked into MultiProcessing Conditions and finished the video of the
 
 After consulting with Jose Maria Canas, I added extra slides and description to the video. Finally I capped it off by adding subtitles and background music. As my video editing skills have improved somewhat, this video was pretty good :).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AtYmeD9ojUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conditions
 
 The next aspect of this week was the focus on Multiprocessing Conditions for the FSM implementation. After trawling through many examples and Python's Documentation, I got the hang of how Conditions were implemented. 
