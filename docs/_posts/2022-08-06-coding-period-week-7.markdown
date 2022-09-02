@@ -5,7 +5,7 @@ date:   2022-08-06 12:08:00 +0530
 categories: gsoc
 ---
 
-Another pretty busy for me personally. This led to a bit of slowdown in the work done.
+Another pretty busy week for me personally. This led to a bit of slowdown in the work done. However I started with the documentation editing through Jinja and tried using Locks for the FSM.
 
 ## Documentation
 
@@ -17,8 +17,18 @@ I started learning about Jinja and after some time I could add the block images 
 
 I did this by using the inbuilt svg code from the json file. I used it as a sort of dictionary depending on the page the user was on to display the image.
 
+```
+"{% block body %}
+{% set currentblock = module.modulename.split(".")[-1].replace("%20", "") %}
+<!-- Adds the block image to the right hand side of the page -->
+{% if currentblock != parent and imageData[currentblock] is string %}
+<img src={{imageData[currentblock]}} style="float:right; margin-top:3em" height="20%" width="20%">
+{% endif %}
 
+{{ super() }}
 
+{% endblock %}"
+```
 
 ## FSM
 
