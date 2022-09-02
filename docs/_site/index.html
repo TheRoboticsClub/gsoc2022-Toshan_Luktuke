@@ -10,8 +10,11 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Toshan's GSoC Log</title>
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+<meta name="description" content="Improving Visual Circuit">
 
+
+  <meta name="author" content="Toshan Luktuke">
+  
 
 
 <meta property="og:type" content="website">
@@ -21,7 +24,11 @@
 <meta property="og:url" content="http://localhost:4000/gsoc2022-Toshan_Luktuke/">
 
 
-  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <meta property="og:description" content="Improving Visual Circuit">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/gsoc2022-Toshan_Luktuke/assets/banner-blur.jpg">
 
 
 
@@ -31,7 +38,9 @@
 
 
 
+  
 
+  
 
 
 <link rel="canonical" href="http://localhost:4000/gsoc2022-Toshan_Luktuke/">
@@ -44,7 +53,7 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": null,
+      "name": "Toshan Luktuke",
       "url": "http://localhost:4000/gsoc2022-Toshan_Luktuke/"
     
   }
@@ -105,11 +114,19 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
+          <a class="site-logo" href="/gsoc2022-Toshan_Luktuke/"><img src="/gsoc2022-Toshan_Luktuke/assets/jde-logo.gif" alt="Toshan's GSoC Log"></a>
+        
         <a class="site-title" href="/gsoc2022-Toshan_Luktuke/">
           Toshan's GSoC Log
           
         </a>
-        <ul class="visible-links"></ul>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/gsoc2022-Toshan_Luktuke/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/gsoc2022-Toshan_Luktuke/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/JdeRobot/VisualCircuit/tree/master">Github</a>
+            </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -124,6 +141,40 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #0000; background-image: url('/gsoc2022-Toshan_Luktuke/assets/banner-blur.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Toshan’s GSoC Log
+
+        
+      </h1>
+      
+        <p class="page__lead">Improving Visual Circuit
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
@@ -133,9 +184,22 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
+    <p>Visual Circuit is an open source tool to develop robotic applications. It aims to make developing applications for ROS and Gazebo simple and user friendly by its intuitive block-based interface. Users have the ablity to drag and drop blocks to develop their logic. Users are also able to build completely custom blocks as well as edit code in the existing blocks, this makes Visual Circuit a robust and powerful tool to develop even complicated applications. The aim of this project is to make Visual Circuit cross-platform by porting wires to the Python Shared Memory Implementation. The requirements of the project are:</p>
+<ul>
+  <li>Update code in order to make inter-process communication work with Python Shared Memory Objects</li>
+  <li>Update block templates in order to work with the new Shared Memory Implementation</li>
+  <li>Make demo applications to showcase how Visual Circuit can be used</li>
+</ul>
+
+<h3 id="mentors">Mentors</h3>
+<ul>
+  <li><a href="https://github.com/Suhas-G">Suhas Gopal</a></li>
+  <li><a href="https://github.com/muhammadtahasuhail">Muhammad Taha</a></li>
+</ul>
+
+<p><strong>Official Repository:</strong> <a href="https://github.com/JdeRobot/VisualCircuit/">VisualCircuit</a><br />
+<strong>Github Issues</strong>: <a href="https://github.com/JdeRobot/VisualCircuit/issues?q=is%3Aissue+author%3Atoshan-luktuke">Summary</a><br />
+<strong>Pull Requests:</strong> <a href="https://github.com/JdeRobot/VisualCircuit/issues?q=is%3Apull-request+author%3Atoshan-luktuke">Summary</a></p>
 
 
 <h3 class="archive__subtitle">Recent Posts</h3>
@@ -154,14 +218,557 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/gsoc2022-Toshan_Luktuke/jekyll/update/2022/05/26/welcome-to-jekyll.html" rel="permalink">Welcome to Jekyll!
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-10/" rel="permalink">Week 10: Coding Period
 </a>
       
     </h2>
     
 
+  <p class="page__meta">
+    
 
-    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...</p>
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week I looked into MultiProcessing Conditions and finished the video of the FSM.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-9/" rel="permalink">Week 9: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week saw the completion of the FSM video and the solution to the block size bug.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-8/" rel="permalink">Week 8: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I made more progress with the documentation and some other auxillary bug fixes this week.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-7/" rel="permalink">Week 7: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Another pretty busy week for me personally. This led to a bit of slowdown in the work done. However I started with the documentation editing through Jinja an...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-6/" rel="permalink">Week 6: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week was quite hectic for me. My college started offline after a while, due to travelling and a few other events the time I could spend on Visual Circui...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-5/" rel="permalink">Week 5: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This was a week where I started to work on the Finite State Machine that I had mentioned in my proposal.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-4/" rel="permalink">Week 4: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week marked a focus on completing the remaining PRs from last week. I also finished adding a new IMU block and worked on general share() and read() func...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-3/" rel="permalink">Week 3: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week I finally finished the remaining templates from last week. I also managed to upload my created videos to the JdeRobot YouTube Channel.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-2/" rel="permalink">Week 2: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week was about identifying and solving some bugs I had noticed during usage of the tool. I also started with the work template updation.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-1/" rel="permalink">Week 1: Coding Period
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This week marked the official beginning of the coding period. Going by last week’s set goals I started on the video creation part first and foremost.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/community-bonding-week-3/" rel="permalink">Week 3: Community Bonding
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This was the last week of community bonding, however due to other commitments in college I had a hard time working on Visual Circuit.
+
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/community-bonding-week-2/" rel="permalink">Week 2: Community Bonding
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">In my previous posts I had highlighted the challenges I faced while installing Jde Drones and getting code running on it. Next after these steps was to solve...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/getting-code-running-on-drones/" rel="permalink">Getting Code Running on Drones
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">After I got the drones running now it was time to actually write the code to solve some exercises. The goal for this week of the GSoC
+period was to get 1-2 a...</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/gsoc2022-Toshan_Luktuke/gsoc/installing-jde-drone/" rel="permalink">Installing JDE Drones
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Getting started with my GSoC period, one of my goals during the project was to make drone applications using Visual Circuit.
+JdeRobot’s Academy already has s...</p>
   </article>
 </div>
 
@@ -187,6 +794,22 @@
     
 
     
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/toshan-luktuke" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
 
     
       <li><a href="/gsoc2022-Toshan_Luktuke/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
@@ -194,7 +817,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2022 Toshan's GSoC Log. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 Toshan Luktuke. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

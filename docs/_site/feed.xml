@@ -1,17 +1,397 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/" rel="alternate" type="text/html" /><updated>2022-05-28T12:12:43+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/feed.xml</id><title type="html">Toshan’s GSoC Log</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/jekyll/update/2022/05/26/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-05-26T23:13:33+05:30</published><updated>2022-05-26T23:13:33+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/jekyll/update/2022/05/26/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/jekyll/update/2022/05/26/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/" rel="alternate" type="text/html" /><updated>2022-09-02T19:50:23+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/feed.xml</id><title type="html">Toshan’s GSoC Log</title><subtitle>This is where I'll be updating my GSoC Progress each week. I'll also be using this blog to keep a track of errors I encounter and how I solve them.</subtitle><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><entry><title type="html">Week 10: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-10/" rel="alternate" type="text/html" title="Week 10: Coding Period" /><published>2022-08-27T21:55:00+05:30</published><updated>2022-08-27T21:55:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-10</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-10/">&lt;p&gt;This week I looked into MultiProcessing Conditions and finished the video of the FSM.&lt;/p&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After consulting with Jose Maria Canas, I added extra slides and description to the video. Finally I capped it off by adding subtitles and background music. As my video editing skills have improved somewhat, this video was pretty good :).&lt;/p&gt;
 
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/AtYmeD9ojUo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h2 id=&quot;conditions&quot;&gt;Conditions&lt;/h2&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;The next aspect of this week was the focus on Multiprocessing Conditions for the FSM implementation. After trawling through many examples and Python’s Documentation, I got the hang of how Conditions were implemented.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Subsequently I used them through Visual Circuit to implement the FSM. Using Conditions and a shared Value variable, I was able to implement a perfectly working FSM with virtually no changes to the code of the original Visual Circuit program.&lt;/p&gt;
+
+&lt;p&gt;The only the differences were as follows:
+Adding Value and Condition to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main.py&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'i'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;processes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;multiprocessing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;freq&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;freq&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This made me change the template of the blocks as follows:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally an example of a block made using Conditions:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;IS_INITIAL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IS_INITIAL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;IS_INITIAL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Block 1 is executing ...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'o'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;fsm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notify_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wait&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that the above block was made as a test for how the Conditions worked together with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sleep&lt;/code&gt; statements. However this method didn’t exactly achive the ‘Visual’ aspect of Visual Circuit’s goal. We’ve decided to look into a way to integrate the Multiprocessing Values with the Visual Circuit interface, maybe by using it as a block?&lt;/p&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week I looked into MultiProcessing Conditions and finished the video of the FSM.</summary></entry><entry><title type="html">Week 9: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-9/" rel="alternate" type="text/html" title="Week 9: Coding Period" /><published>2022-08-20T23:55:00+05:30</published><updated>2022-08-20T23:55:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-9</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-9/">&lt;p&gt;This week saw the completion of the FSM video and the solution to the block size bug.&lt;/p&gt;
+
+&lt;h2 id=&quot;block-size&quot;&gt;Block Size&lt;/h2&gt;
+&lt;p&gt;The problem lay in the fact that you don’t have a resize event listener in HTML or React. Due to this Suhas made resize events fire using the onMouseDown listener in the block.&lt;/p&gt;
+
+&lt;p&gt;This caused the resize code to run whenever the user wrote code or typed in the block. This then set the size of the block to around 19px.&lt;/p&gt;
+
+&lt;p&gt;To fix this, when firing re-size events we made the minimum size around 300px. While this isn’t the best way to do it, it is still a fix until we think of some workaround.&lt;/p&gt;
+
+&lt;h2 id=&quot;fsm-video&quot;&gt;FSM Video&lt;/h2&gt;
+&lt;p&gt;Suhas helped me again in this aspect. He tried to implement the FSM himself, in order to do that he added code that locked the processes execution while conducting input and output. This meant that only 1 process could write to the block at a time.&lt;/p&gt;
+
+&lt;p&gt;THis was very useful in implementing the sleep functions of the FSM. Using his modifications with my own code. The Vacuum Cleaner functioned the way it was intended to and I finished with the video.&lt;/p&gt;
+
+&lt;p&gt;However, some editing is still remaining in the video and will be done soon.&lt;/p&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week saw the completion of the FSM video and the solution to the block size bug.</summary></entry><entry><title type="html">Week 8: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-8/" rel="alternate" type="text/html" title="Week 8: Coding Period" /><published>2022-08-13T23:55:00+05:30</published><updated>2022-08-13T23:55:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-8</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-8/">&lt;p&gt;I made more progress with the documentation and some other auxillary bug fixes this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Continuing on last week’s images, this week I wrote the basic documentation for all of the blocks in Visual Circuit.&lt;/p&gt;
+
+&lt;p&gt;It was done by adding a docstring to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main()&lt;/code&gt; function of the Python file. Pdoc then automatically reads it and displays it in an HTML format.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/sample_doc_page.png&quot; alt=&quot;Sample Documentation Page&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fsm&quot;&gt;FSM&lt;/h2&gt;
+
+&lt;p&gt;We had a debugging session in the meet this week, however we couldn’t find an efficient way to perfect the execution of the Vaccum Cleaner agent.&lt;/p&gt;
+
+&lt;h2 id=&quot;block-size&quot;&gt;Block Size&lt;/h2&gt;
+
+&lt;p&gt;I discovered a bug that while saving blocks. Sometimes the height and width of the code blocks are saved as very small values roughly to the tune of 14-19px. So when loading a saved design again, the code block usually opens with a very small size. I pushed a commit fixing this issue in the existing blocks by changing their height and width values.&lt;/p&gt;
+
+&lt;p&gt;However, the larger symptom of why this bug occurs still remains at large.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-vc3-file-to-the-built-application&quot;&gt;Adding .vc3 file to the built application&lt;/h2&gt;
+
+&lt;p&gt;Aside from this I pushed a feature that added the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.vc3&lt;/code&gt; configuration file to the built application as well. This is helpful as we often forget to save the configuration file while after building the application. Later if we want to make structural changes to our design, we will require this file. Hence bundling it along with the built application is more convenient for users.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/180&quot;&gt;Block Size is too small in certain cases&lt;/a&gt;
+    &lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/179&quot;&gt;Correct error in Threshold Block&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/182&quot;&gt;Add the .vc3 file to the built application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">I made more progress with the documentation and some other auxillary bug fixes this week.</summary></entry><entry><title type="html">Week 7: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-7/" rel="alternate" type="text/html" title="Week 7: Coding Period" /><published>2022-08-06T12:08:00+05:30</published><updated>2022-08-06T12:08:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-7</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-7/">&lt;p&gt;Another pretty busy week for me personally. This led to a bit of slowdown in the work done. However I started with the documentation editing through Jinja and tried using Locks for the FSM.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;I started looking into extending and editing pdoc for our purposes. I found out that it had a customisable HTML template that could be edited easily using Jinja2.&lt;/p&gt;
+
+&lt;p&gt;I started learning about Jinja and after some time I could add the block images to the right hand side of the page made.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/images_in_docs.png&quot; alt=&quot;Blocks with Images&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I did this by using the inbuilt svg code from the json file. I used it as a sort of dictionary depending on the page the user was on to display the image.&lt;/p&gt;
+
+&lt;h2 id=&quot;fsm&quot;&gt;FSM&lt;/h2&gt;
+
+&lt;p&gt;I looked into what exactly was causing the weird behaviour in the FSM. In my opinion it was the multiprocessing aspect of the application with the control moving to different processes whenever a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sleep()&lt;/code&gt; command was present.&lt;/p&gt;
+
+&lt;p&gt;To attempt a fix to this I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Locks()&lt;/code&gt; from Python’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multiprocessing&lt;/code&gt; module. These Locks had to be added to the parameter list of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main.py&lt;/code&gt; file which is auto-generated. This allowed every module to inherit the lock as a part of its parameter list.&lt;/p&gt;
+
+&lt;p&gt;Yet, after using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lock.acquire()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lock.release()&lt;/code&gt; in the critical section of the code, there was a huge difference in how the program executed.&lt;/p&gt;
+
+&lt;p&gt;The problems with different processes being started disappeared completely!&lt;/p&gt;
+
+&lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+&lt;p&gt;No new Pull Requests were made this week&lt;/p&gt;
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;No new issues were raised this week&lt;/p&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">Another pretty busy week for me personally. This led to a bit of slowdown in the work done. However I started with the documentation editing through Jinja and tried using Locks for the FSM.</summary></entry><entry><title type="html">Week 6: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-6/" rel="alternate" type="text/html" title="Week 6: Coding Period" /><published>2022-07-30T23:55:00+05:30</published><updated>2022-07-30T23:55:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-6</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-6/">&lt;p&gt;This week was quite hectic for me. My college started offline after a while, due to travelling and a few other events the time I could spend on Visual Circuit was reduced to a certain exent.&lt;/p&gt;
+
+&lt;p&gt;Still, I managed to make some progress on last week’s goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;fsm&quot;&gt;FSM&lt;/h2&gt;
+
+&lt;p&gt;I continued work on the FSM, I realized that the old block model I was using was unsustainable. This was due to a flaw in which all of the states were not updated, i.e. when the control moved from block 0 -&amp;gt; block 1 -&amp;gt; block 2 the state changes from 0 -&amp;gt; 1 -&amp;gt; 2. However block 1 will keep supplying state 1 to block 2 even though block 2 supplies 0 to block 0, this cause block 2 to repeatedly execute.&lt;/p&gt;
+
+&lt;p&gt;To fix this I switched to a Master-Controller relationship between the blocks as suggessted by my mentors last week. This involved having one block just to oversee the state and control the other blocks, the diagram looked something like this:
+&lt;img src=&quot;&quot; alt=&quot;Block Diagram Master-Controller&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After this implementation I was able to get the Vacuum Cleaner implementation working the way it was intended. However there were certain cases in which it showed erratic behavior still. I showed it to my mentors and the conclusion seemed to be that the multiprocessing aspect of the application was causing some unexpected behavior. To fix this I suggested having a lock for the process what was currently being executed, however we did not come to a fixed conclusion about this issue.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Last week I had found &lt;a href=&quot;https://pdoc.dev/&quot;&gt;pdoc&lt;/a&gt; as a useful tool for documenting the application. This week I extended on last week’s work by writing a simple Python script to extract all the json data from the block files, store them as python files and then run pdoc on them to generate some rudimentary documentation.&lt;/p&gt;
+
+&lt;p&gt;The next step for this was to adapt the tool to work according to our needs. That part will be worked on next week. The problem with the json implementation and custom block type work meant that this will require some rewriting of the code of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pdoc&lt;/code&gt; itself.
+Perhaps, not 100% sure about it yet.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-bugs&quot;&gt;General Bugs&lt;/h2&gt;
+
+&lt;p&gt;While giving a demo of some blocks I found that the Threshold block was incorrectly saved in the Tool, that will be fixed in a PR soon. Aside from that I identified what was causing the bug of the blocks opening with very small sizes. Apparently while saving the blocks their size was saved incorrectly. By editing these values in the JSON I was able to restore them to a normal size. This meant that would open in the correct size by default and the user would not have to spend time trying to re-size them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Example of a shrunken block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On an unrelated note, the Mid-Term evaluations of GSoC were this week. Quite happy that the project is on track!&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;No new Issues were raised this week&lt;/p&gt;
+&lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+&lt;p&gt;No new Pull Requests were issued this week however some corrections and updates were made on already active ones from the previous week.&lt;/p&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week was quite hectic for me. My college started offline after a while, due to travelling and a few other events the time I could spend on Visual Circuit was reduced to a certain exent.</summary></entry><entry><title type="html">Week 5: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-5/" rel="alternate" type="text/html" title="Week 5: Coding Period" /><published>2022-07-24T23:15:00+05:30</published><updated>2022-07-24T23:15:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-5</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-5/">&lt;p&gt;This was a week where I started to work on the Finite State Machine that I had mentioned in my proposal.&lt;/p&gt;
+
+&lt;p&gt;## FSM&lt;/p&gt;
+
+&lt;p&gt;The start was simple enough, first I had to find a world to run the robot in. My mentors suggessted the Vacuum Cleaner exercise from Robotics Academy or Bump and Go. I initially tried setting up Bump and Go’s world on my computer.&lt;/p&gt;
+
+&lt;p&gt;However it used a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kobuki&lt;/code&gt; robot or rather a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kobuki_node&lt;/code&gt; dependency of the bot. Despite checking multiple sources on the internet I wasn’t able to find a way to install it through the ros package manager. This left me one option i.e. to build from source, over here I followed a few tutorials but quickly realised that the errors I was getting would be quite troublesome to solve, and it would be easier to simply try the Vacuum Cleaner world once.&lt;/p&gt;
+
+&lt;p&gt;For the Vacuum Cleaner bot I had to download the &lt;a href=&quot;https://github.com/JdeRobot/CustomRobots&quot;&gt;Custom Robots&lt;/a&gt; repo from JdeRobot. I placed this repo in my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;catkin_ws&lt;/code&gt; and added the models to my &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$GAZEBO_MODEL_PATH&lt;/code&gt; soon after it launched perfectly.&lt;/p&gt;
+
+&lt;p&gt;My approach to the FSM was as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;Insert Image here soon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With 3 main states&lt;/p&gt;
+
+&lt;p&gt;I managed to create a working Python program in short order, but when it came to making something similar with Visual Circuit I started facing some issues.&lt;/p&gt;
+
+&lt;p&gt;A few were related to how i had initially placed the for loops and initialised nodes in my programs. After those were out of the way I faced an issue where overlapping commands were being sent to the motors.&lt;/p&gt;
+
+&lt;p&gt;This was because the inbuilt abstraction over the motors used threading to keep supplying values, to deal with this i wrote my own publisher to the topic, it was quite simple and resolved the issue.&lt;/p&gt;
+
+&lt;p&gt;Finally I had an issue where the bot could not go back to its initial state after getting to the third one.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately I couldn’t resolve this within the week and had to push it forward as a part of next weeks goals&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;No new Issues were raised this week&lt;/p&gt;
+&lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+&lt;p&gt;No new Pull Requests were issued this week however some corrections and updates were made on already active ones from the previous week.&lt;/p&gt;
+
+&lt;!---
+ This leads me to a persistent question that developing with Visual Circuit is often harder than developing simply with Python... this needs to be solved in a meaningful way going forward.
+
+ ---&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This was a week where I started to work on the Finite State Machine that I had mentioned in my proposal.</summary></entry><entry><title type="html">Week 4: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-4/" rel="alternate" type="text/html" title="Week 4: Coding Period" /><published>2022-07-17T12:19:00+05:30</published><updated>2022-07-17T12:19:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-4</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-4/">&lt;p&gt;This week marked a focus on completing the remaining PRs from last week. I also finished adding a new IMU block and worked on general &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;share()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read()&lt;/code&gt; functions.&lt;/p&gt;
+
+&lt;h3 id=&quot;imu-block&quot;&gt;IMU Block&lt;/h3&gt;
+
+&lt;p&gt;An IMU (Inertial Measurement Unit) is a sensor commonly found in drones that detects the orientation and the angular velocities of the robot.&lt;/p&gt;
+
+&lt;p&gt;It is essential for writing our own control systems for drones. I started the work on the block. For testing how it worked I used the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;visual_lander&lt;/code&gt; simulation. Since mavros already has an inbuilt IMU in its models. Constructing the block template was just about reading the processing the data already gotten in an appropriate manner.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/imu_block.png&quot; alt=&quot;IMU Block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The code is as follows:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rospy&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sensor_msgs.msg&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Imu&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tf.transformations&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;euler_from_quaternion&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Get the orientation list from the IMU sensor
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;orientation_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Convert orientation obtainted into values of roll, pitch and yaw
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pitch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yaw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;euler_from_quaternion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;orientation_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Convert val;ues in Radians to Degrees
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.14159265&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pitch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pitch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.14159265&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;yaw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yaw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.14159265&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Obtain Angular Velocities from IMU sensor
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;angVel_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angular_velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;angVel_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angular_velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;angVel_z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angular_velocity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Store all this data in 'data' variable for use in main function
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pitch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yaw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;angVel_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;angVel_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;angVel_z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# ----- Lines only for demo purpose -----
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;rospy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Orientation&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Roll = {0}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Pitch = {1}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Yaw = {2}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pitch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yaw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# These are not included in the block's code
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;rospy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Angular Velocities&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Wx = {0}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Wy = {1}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Wz = {2}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angVel_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angVel_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angVel_z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# These are not included in the block's code
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; 
+    &lt;span class=&quot;n&quot;&gt;auto_enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Enable'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Exception&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;auto_enable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;rospy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_node&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'imu_vc'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rostopic_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ROSTopic&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rospy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Subscriber&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rostopic_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Imu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto_enable&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Enable'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rospy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_shutdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;outputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;share_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Out&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;synchronise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And the output:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/imu_data.png&quot; alt=&quot;IMU Output&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;general-share-and-read&quot;&gt;General Share and Read&lt;/h3&gt;
+&lt;p&gt;The other major task done this week was creating a general read and share function. Before this in Visual Circuit we had separate functions to share the output of blocks.&lt;/p&gt;
+
+&lt;p&gt;For e.g. in order to share an image we had to write &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;share_image(...)&lt;/code&gt;, similarly for an array &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;share_array(...)&lt;/code&gt; and on the other end to read then we had to include specific functions such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_image(...)&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_array(...)&lt;/code&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;This was something that could be improved to make it simpler for the users. 
+The reason this was done separately was that while sharing something we have its data type, hence it can be general purpose, however while reading it we don’t know what kind of data type we’ll be getting hence the need for specific functions. We need the exact data type while reading because when the Shared Memory Buffer is read it is specific for the supplied data type.&lt;/p&gt;
+
+&lt;p&gt;The solution was creating a new buffer that contains the type of the data being supplied. Since numpy had data type strings of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&amp;lt;i8&quot;&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&amp;lt;U6&quot;&lt;/code&gt; etc. We simply make a new object to store the data type of whatever data is being supplied, since this data is always stored in a String format it is known how to decode it on the read end. Then once we have the data type we can use it to decode the actual data.&lt;/p&gt;
+
+&lt;p&gt;This solution had a few bugs in it as well namely what would happen when the data type changed? This was an issue especially with the string data types. Usually numpy gives a data type of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&amp;lt;U1&quot;&lt;/code&gt; to a string that has only one character. However even when the number of characters increases, as this data type doesn’t change we can only read one character.&lt;/p&gt;
+
+&lt;p&gt;There were again two approaches I tried to fix this issue:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Simply allocating a larger buffer by default to the data types&lt;/li&gt;
+  &lt;li&gt;Overwriting the buffer whenever the data type changed&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After discussing with my mentors, we decided to go with approach no. 1 as it was faster than the second one.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;No new issues were raised this week.&lt;/p&gt;
+
+&lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/171&quot;&gt;Add a block to process data from an IMU&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/173&quot;&gt;Add functions to share any type of data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week marked a focus on completing the remaining PRs from last week. I also finished adding a new IMU block and worked on general share() and read() functions.</summary></entry><entry><title type="html">Week 3: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-3/" rel="alternate" type="text/html" title="Week 3: Coding Period" /><published>2022-07-10T12:08:00+05:30</published><updated>2022-07-10T12:08:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-3</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-3/">&lt;p&gt;This week I finally finished the remaining templates from last week. I also managed to upload my created videos to the JdeRobot YouTube Channel.&lt;/p&gt;
+
+&lt;h3 id=&quot;template-updation&quot;&gt;Template Updation&lt;/h3&gt;
+&lt;p&gt;Continuing from where I left off last week, this week I finished all the remaining template blocks. A list of them would be Teleoperator, PID, MotorDriver, ObjectDetector, ROSCamera and Odometer.&lt;/p&gt;
+
+&lt;p&gt;In addition, there were some improvements to be made to the old PR, that I had to update, namely I had included a Frequency constant in each of the blocks which wasn’t needed anymore as the new version of Visual Circuit had the frequency directly built into the code block itself.&lt;/p&gt;
+
+&lt;p&gt;After updating that for all of the blocks once again I submitted the PRs.&lt;/p&gt;
+
+&lt;h3 id=&quot;read_string-function&quot;&gt;Read_String function&lt;/h3&gt;
+
+&lt;p&gt;Currently Visual Circuit has functions to share arrays, images and numbers but no option to share strings. The other goal this week was to work with the backend of the application to add this feature.&lt;/p&gt;
+
+&lt;p&gt;In the process of adding this feature I discovered that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read_number()&lt;/code&gt; function would not work correctly either.&lt;/p&gt;
+
+&lt;p&gt;The main problem was that the old version of the code would simply store the data from the Shared Memory Object in the wire. However when it came to access the wire a second time, the Shared Memory Object itself was not tracked hence it gave an error of leaked Shared Memory Object.&lt;/p&gt;
+
+&lt;p&gt;To solve this, I stored the Shared Memory Object itself in the wire and while getting the data I simply got it from the buffer.&lt;/p&gt;
+
+&lt;h3 id=&quot;port-updation&quot;&gt;Port Updation&lt;/h3&gt;
+
+&lt;p&gt;THe old Visual Circuit used the port &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80&lt;/code&gt; for its backend to listen to. The problem with that was that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80&lt;/code&gt; is a reserved port by the computer and required &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; access to be able to start a server on port &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To fix this I changed the port number that the backend listens on from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8000&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;video-editing&quot;&gt;Video Editing&lt;/h3&gt;
+
+&lt;p&gt;Aside from this I also edited the videos made previously to make them more presentable. After a few iterations they were finally uploaded to the JdeRobot YouTube Channel. You can see the results below:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/J1JhnNOKe1o&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Xs3iAPYRtVQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Main t=changes were adding background music, some captions and speeding up some parts of the video.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/166&quot;&gt;New Template blocks for remaining blocks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/164&quot;&gt;read_number function in inputs doesn’t work&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/161&quot;&gt;New template blocks OpenCV collection&lt;/a&gt;
+    &lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/162&quot;&gt;Update OpenCV Templates to the new Shared Memory Implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/165&quot;&gt;Add read_string and share_string functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/163&quot;&gt;Update port used by backend from 80 to 8000&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/167&quot;&gt;Fix read_number function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/168&quot;&gt;Update ROS Templates for new Shared Memory Implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/169&quot;&gt;Update Control Templates for new Shared Memory Implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/170&quot;&gt;Update Basic Code Template&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week I finally finished the remaining templates from last week. I also managed to upload my created videos to the JdeRobot YouTube Channel.</summary></entry><entry><title type="html">Week 2: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-2/" rel="alternate" type="text/html" title="Week 2: Coding Period" /><published>2022-07-02T11:46:00+05:30</published><updated>2022-07-02T11:46:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-2</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-2/">&lt;p&gt;This week was about identifying and solving some bugs I had noticed during usage of the tool. I also started with the work template updation.&lt;/p&gt;
+
+&lt;h3 id=&quot;collectstatic&quot;&gt;Collectstatic&lt;/h3&gt;
+&lt;p&gt;Going by the goals set last week and the advice of Suhas the first thing I did was to research the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;collectstatic&lt;/code&gt; step in the install.&lt;/p&gt;
+
+&lt;p&gt;It turns out that before we run the server we must first run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python3 manage.py collectstatic&lt;/code&gt; what this does is that it collects all the files in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;staticfiles&lt;/code&gt; folder and builds the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;static&lt;/code&gt; folder. This step was missing from the install instructions on both the repo and the website. So I added it to both the places.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiple-blocks&quot;&gt;Multiple Blocks&lt;/h3&gt;
+&lt;p&gt;Next was the issue where VisualCircuit built multiple blocks and gave them the same filename.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/same_name_bug.png&quot; alt=&quot;Multiple Blocks Bug&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To solve this I went into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;synthesis.py&lt;/code&gt; file in the backend. Here I added a counter that kept track of how many of each type of block existed. Accordingly it appended a number like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1, 2, 3 ... etc.&lt;/code&gt; to the end of the filename.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/fixed_same_name_bug.png&quot; alt=&quot;Solved Bug&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;template-updation&quot;&gt;Template Updation&lt;/h3&gt;
+
+&lt;p&gt;Most of the time this week however went into the template updation work. After moving to the new shared memory implementation (&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/151&quot;&gt;#151&lt;/a&gt;) the old templates of the blocks needed to be updated.&lt;/p&gt;
+
+&lt;p&gt;E.g. of updated template for the Dilation Block:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/dilation_old.png&quot; alt=&quot;Blur Old Template&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/dilation_new.png&quot; alt=&quot;Blur New Template&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see the new template is much simpler and easier to read. I majorly did all the OpenCV Blocks this week. They consist of about 60 - 65% of the blocks. The rest are to be done next week.&lt;/p&gt;
+
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;/h2&gt;
+&lt;p&gt;Relevant Issues raised this week were:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/157&quot;&gt;Multiple Blocks have the same filename&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/issues/161&quot;&gt;New template blocks OpenCV collection&lt;/a&gt;
+    &lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+    &lt;p&gt;Relevant Pull Requests were:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/156&quot;&gt;Update Backend Install Instructions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/158&quot;&gt;Fix the naming to be unique for each block&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JdeRobot/VisualCircuit/pull/162&quot;&gt;Update OpenCV Templates to the new Shared Memory Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week was about identifying and solving some bugs I had noticed during usage of the tool. I also started with the work template updation.</summary></entry><entry><title type="html">Week 1: Coding Period</title><link href="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-1/" rel="alternate" type="text/html" title="Week 1: Coding Period" /><published>2022-06-24T19:03:00+05:30</published><updated>2022-06-24T19:03:00+05:30</updated><id>http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-1</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Toshan_Luktuke/gsoc/coding-period-week-1/">&lt;p&gt;This week marked the official beginning of the coding period. Going by last week’s set goals I started on the video creation part first and foremost.&lt;/p&gt;
+
+&lt;p&gt;In order to portray a Visual Circuit solution that was good to view as an example, I first had to solve a persistent bug that had troubled me for a while.&lt;/p&gt;
+
+&lt;p&gt;Namely, I wasn’t able to get string outputs to be shared between blocks. To solve this my mentor had suggested simply updating to a new version of the repo, I moved up a few commits and viola it worked as intended.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-the-apps&quot;&gt;Creating the Apps&lt;/h3&gt;
+
+&lt;p&gt;Following that I started changing the old solutions that I had made to better utilise the &lt;strong&gt;block design&lt;/strong&gt; of Visual Circuit. The diagrams of the solutions to Visual Lander and Labyrinth Escape are as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/visual_lander_diagram.png&quot; alt=&quot;Visual Lander&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/labyrinth_escape_diagram.png&quot; alt=&quot;Labyrinth Escape&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I noted a few bugs during this whole process namely:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The files in staticfiles should be moved to the static folder&lt;/li&gt;
+  &lt;li&gt;Having multiple blocks of the same type causes them to be built with the same name e.g.:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/gsoc2022-Toshan_Luktuke/assets/same_name_bug.png&quot; alt=&quot;Multiple Blocks Bug&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;goals-for-next-week&quot;&gt;Goals for Next Week&lt;/h3&gt;
+&lt;p&gt;The main focus for next week will be on solving the issues encountered this week:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Change between static and staticfiles (link to issue)&lt;/li&gt;
+  &lt;li&gt;Multiple same blocks are built incorrectly (link to issue)&lt;/li&gt;
+  &lt;li&gt;Improving block templates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;solution-videos&quot;&gt;Solution Videos&lt;/h3&gt;
+
+&lt;h4 id=&quot;visual-lander&quot;&gt;Visual Lander&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/17KqUHMvlxc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;labyrinth-escape&quot;&gt;Labyrinth Escape&lt;/h4&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UNzP1DVKK04&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Toshan Luktuke</name><email>toshan1603@gmail.com</email></author><category term="gsoc" /><summary type="html">This week marked the official beginning of the coding period. Going by last week’s set goals I started on the video creation part first and foremost.</summary></entry></feed>
