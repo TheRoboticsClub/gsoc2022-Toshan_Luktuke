@@ -6,7 +6,7 @@ layout: home
 permalink: /
 header:
   overlay_color: "#0000"
-  overlay_image: /assets/banner.png
+  overlay_image: /assets/banner-blur.png
 excerpt: 
   Improving Visual Circuit
 ---
