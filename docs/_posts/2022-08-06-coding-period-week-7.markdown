@@ -15,20 +15,9 @@ I started learning about Jinja and after some time I could add the block images 
 
 ![Blocks with Images](/gsoc2022-Toshan_Luktuke/assets/images_in_docs.png)
 
-I did this by using the inbuilt svg code from the json file. I used it as a sort of dictionary depending on the page the user was on to display the image/
+I did this by using the inbuilt svg code from the json file. I used it as a sort of dictionary depending on the page the user was on to display the image.
 
-```
-{% block body %}
-{% set currentblock = module.modulename.split(".")[-1].replace("%20", "") %}
-<!-- Adds the block image to the right hand side of the page -->
-{% if currentblock != parent and imageData[currentblock] is string %}
-<img src={{imageData[currentblock]}} style="float:right; margin-top:3em" height="20%" width="20%">
-{% endif %}
 
-{{ super() }}
-
-{% endblock %}
-```
 
 
 ## FSM
