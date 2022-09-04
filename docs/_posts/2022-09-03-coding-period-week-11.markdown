@@ -19,3 +19,9 @@ Additionaly if we are to add some extra info the docs by ourselves, it'll be los
 
 I updated this blog a bit as well, adding some images, descriptions and generally just improving its look a bit in this week.
 
+
+## Issues
+No new issues were raised this week
+
+## Pull Requests
+- [Add new documentation for Blocks made by pdoc](https://github.com/JdeRobot/VisualCircuit/pull/187) (This is by far the largest pull request simple because of the amount of line added XD)
