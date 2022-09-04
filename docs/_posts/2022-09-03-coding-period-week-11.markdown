@@ -1,7 +1,7 @@
 ---
 layout: posts
 title:  "Week 11: Coding Period"
-date:   2022-09-03 15:52:32 +0530
+date:   2022-09-04 15:52:32 +0530
 categories: gsoc
 ---
 
