@@ -24,4 +24,4 @@ I updated this blog a bit as well, adding some images, descriptions and generall
 No new issues were raised this week
 
 ## Pull Requests
-- [Add new documentation for Blocks made by pdoc](https://github.com/JdeRobot/VisualCircuit/pull/187) (This is by far the largest pull request simple because of the amount of line added XD)
+- [Add new documentation for Blocks made by pdoc](https://github.com/JdeRobot/VisualCircuit/pull/187) (This is by far the largest pull request simple because of the amount of lines added XD)

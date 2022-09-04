@@ -1,0 +1,90 @@
+---
+layout: posts
+title:  "Summary Report"
+date:   2022-09-04 18:52:32 +0530
+categories: gsoc
+---
+
+Late nights, excitement and learning are how I would describe the GSoC period in a few words. These past two months have been a lot of fun, from starting off a someone who knew little to nothing about Visual Circuit to being able to fix problems in boths its frontend and backed. It has been a fantastic journey of learning.
+
+I'd like to thank my mentors Suhas Gopal and Muhammad Taha for supporting me throughout this project. I'd also like to extend my gratitude to Jose Maria Canas for his insights and support.
+
+This blog sums up the past two months of coding by giving a brief overview of everything I've done:
+
+## Community Bonding
+
+After getting to know my mentors I started exploring Visual Circuit and setting up my local version of Robotics Academy. I will confess that setting RoboticsAcademy up locally was quite difficult. JdeRobot officially asks us to download the Docker image if we want to access RoboticsAcademy however, to run programs made on Visual Circuit i would need to run it locally.
+
+Hence the first two blogs go into some detail about how I started up RoboticsAcademy, the errors I encountered and what I did to solve them ([1](https://theroboticsclub.github.io/gsoc2022-Toshan_Luktuke/gsoc/installing-jde-drone/)[2](https://theroboticsclub.github.io/gsoc2022-Toshan_Luktuke/gsoc/getting-code-running-on-drones/)
+
+The exercises that I decided to solve were:
+- [Visual Lander]()
+- [Follow Road]()
+- [Labyrinth Escape]()
+
+## Coding Period
+
+I started off by solving the exercises locally using Python. Once I could get a reliable solution running, I went on to then implement it in Visual Circuit. This proved to be a good way of doing things as there were a lot of errors I encountered initially.
+
+After the exercises were done, the Shared Memory Implementation came next. As my mentor Suhas' [Pull Request](https://github.com/JdeRobot/VisualCircuit/pull/153) was soon merged and the internals of the application began sharing data via Shared Memory Objects. This fulfilled a large part of the implementation.
+
+### Templates
+
+After the internals were updated to Shared Memory, it was time to update the block templates to the newer implementation. Luckily this was simpler than the old code.
+A comparison between the two:
+
+| Old | New |
+|---|---|
+| ![Old Template](/gsoc2022-Toshan_Luktuke/assets/old-template.png) | ![New Template](/gsoc2022-Toshan_Luktuke/assets/new-template.png) |
+
+This was done for every block in Visual Circuit's Library.
+
+### IMU Block
+
+Having made some drone applications I noticed that a very common sensor was missing from Visual Circuit's Library. Namely the IMU (Inertial Measurement Unit) so when I told my mentors about it they suggested I add it. It was quite fun to make my own block with its own template and parameters from scratch. Thankfully due to the existing documentation the process was quite easy. 
+
+![IMU Internals](/gsoc2022-Toshan_Luktuke/assets/imu-internals.png)
+![IMU Block](/gsoc2022-Toshan_Luktuke/assets/imu_block.png)
+
+### Bug Fixes and Features
+
+Throughout these two months I made sure to note down whichever bugs I encountered so that I could solve them. Solving these was how I really got to know the frontend and backend of Visual Circuit:
+
+- [Block Size is too small in certain cases](https://github.com/JdeRobot/VisualCircuit/issues/180)
+- [read_number function in inputs doesn't work](https://github.com/JdeRobot/VisualCircuit/issues/164)
+- [Multiple Blocks have the same Filename](https://github.com/JdeRobot/VisualCircuit/issues/157)
+- [Image is dragged instead of the block](https://github.com/JdeRobot/VisualCircuit/issues/142)
+
+
+#### Features
+
+- [Add functions to share any type of data](https://github.com/JdeRobot/VisualCircuit/pull/173)
+- [Add read_string and share_string functions](https://github.com/JdeRobot/VisualCircuit/pull/165)
+- [Fix the naming to be unique for each block](https://github.com/JdeRobot/VisualCircuit/pull/158)
+
+
+### Finite State Machine
+I had also mentioned trying to make a Finite State Machine in my GSoC Proposal. Implementing it proved to be difficult due to Visual Circuit's Multiprocessing nature. Making code blocks that work sequentially and conditionally was quite hard. However after applying quite a few different techniques, I got it working using Conditions. This was the simplest working version in my opinion. However my mentors were unsure if it satisfied the Visual principle of Visual Circuit so no Pull Request has been made to incorporate Conditions into the main program yet.
+
+However, a video of the FSM has been made:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AtYmeD9ojUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Documentation
+
+To wrap up I made new documentation for all the blocks that are contained in Visual Circuit. We wanted to create auto-generated documentation so we used [pdoc](https://pdoc.dev/) a documentation generator for Python. 
+
+I wrote a script to extract code from the internal JSON files and convert them `.py` files. Then we ran pdoc on the generated files. It generated some very nice documentation for us. However we wanted to make it look even better so I set about using Jinja to customize the generated docs.
+
+It went pretty well and we got some very nice results at the end of the day.
+
+[Sample Doc Page Dark](/gsoc2022-Toshan_Luktuke/assets/sample_doc_page_dark.png)
+
+## Conclusion
+
+To be done
+
+### Issues
+An exhaustive list of all issues can be found [here](https://github.com/JdeRobot/VisualCircuit/issues?q=is%3Aissue+author%3Atoshan-luktuke)
+### Pull Requests
+An exhaustive list of all pull requests can be found [here](https://github.com/JdeRobot/VisualCircuit/issues?q=is%3Apull-request+author%3Atoshan-luktuke)
