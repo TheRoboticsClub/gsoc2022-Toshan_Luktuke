@@ -38,10 +38,11 @@ A comparison between the two:
 | ![Old Template](/gsoc2022-Toshan_Luktuke/assets/old-template.png) | ![New Template](/gsoc2022-Toshan_Luktuke/assets/new-template.png) |
 
 This was done for every block in Visual Circuit's Library.
+An exhaustive list is as follows: []
 
 ### IMU Block
 
-Having made some drone applications I noticed that a very common sensor was missing from Visual Circuit's Library. Namely the IMU (Inertial Measurement Unit) so when I told my mentors about it they suggested I add it. It was quite fun to make my own block with its own template and parameters from scratch. Thankfully due to the existing documentation the process was quite easy. 
+Having made some drone applications I noticed that a very common sensor was missing from Visual Circuit's Library. Namely the IMU (Inertial Measurement Unit) so when I told my mentors about it they suggested I add it. It was quite fun to make my own block with its own template and parameters from scratch. Thankfully due to the existing documentation the process was quite simple to understand. 
 
 ![IMU Internals](/gsoc2022-Toshan_Luktuke/assets/imu-internals.png)
 ![IMU Block](/gsoc2022-Toshan_Luktuke/assets/imu_block.png)
@@ -57,6 +58,7 @@ Throughout these two months I made sure to note down whichever bugs I encountere
 
 
 #### Features
+My other major contirbutions were adding various features aimed at making Visual Ciruit easier to use. 
 
 - [Add functions to share any type of data](https://github.com/JdeRobot/VisualCircuit/pull/173)
 - [Add read_string and share_string functions](https://github.com/JdeRobot/VisualCircuit/pull/165)
@@ -64,7 +66,7 @@ Throughout these two months I made sure to note down whichever bugs I encountere
 
 
 ### Finite State Machine
-I had also mentioned trying to make a Finite State Machine in my GSoC Proposal. Implementing it proved to be difficult due to Visual Circuit's Multiprocessing nature. Making code blocks that work sequentially and conditionally was quite hard. However after applying quite a few different techniques, I got it working using Conditions. This was the simplest working version in my opinion. However my mentors were unsure if it satisfied the Visual principle of Visual Circuit so no Pull Request has been made to incorporate Conditions into the main program yet.
+I had also mentioned trying to make a Finite State Machine in my GSoC Proposal. Implementing it proved to be difficult due to Visual Circuit's Multiprocessing nature. Making code blocks that work sequentially and conditionally was quite hard. However after applying quite a few different techniques, I got it working using Conditions. This was the simplest working version in my opinion. However my mentors were unsure if it satisfied the Visual principle of Visual Circuit so no Pull Request has been made to incorporate Conditions into the main program yet. ([3](https://docs.python.org/3/library/multiprocessing.html))
 
 However, a video of the FSM has been made:
 
@@ -75,6 +77,8 @@ However, a video of the FSM has been made:
 To wrap up I made new documentation for all the blocks that are contained in Visual Circuit. We wanted to create auto-generated documentation so we used [pdoc](https://pdoc.dev/) a documentation generator for Python. 
 
 I wrote a script to extract code from the internal JSON files and convert them `.py` files. Then we ran pdoc on the generated files. It generated some very nice documentation for us. However we wanted to make it look even better so I set about using Jinja to customize the generated docs.
+
+I referred to the Jinja2 and Pdoc documentation available online ([4](https://pdoc.dev/docs/pdoc.html)[5](https://jinja.palletsprojects.com/en/2.11.x/))
 
 It went pretty well and we got some very nice results at the end of the day.
 
