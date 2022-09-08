@@ -18,9 +18,9 @@ After getting to know my mentors I started exploring Visual Circuit and setting 
 Hence the first two blogs go into some detail about how I started up RoboticsAcademy, the errors I encountered and what I did to solve them ([1](https://theroboticsclub.github.io/gsoc2022-Toshan_Luktuke/gsoc/installing-jde-drone/)[2](https://theroboticsclub.github.io/gsoc2022-Toshan_Luktuke/gsoc/getting-code-running-on-drones/)
 
 The exercises that I decided to solve were:
-- [Visual Lander]()
-- [Follow Road]()
-- [Labyrinth Escape]()
+- [Visual Lander](https://www.youtube.com/watch?v=J1JhnNOKe1o)
+- [Labyrinth Escape](https://www.youtube.com/watch?v=Xs3iAPYRtVQ)
+- [Vacuum Cleaner](https://www.youtube.com/embed/AtYmeD9ojUo)
 
 ## Coding Period
 
