@@ -86,7 +86,7 @@ It went pretty well and we got some very nice results at the end of the day.
 
 ## Conclusion
 
-To be done
+In conclusion I enjoyed my time in Google Summer of Code. I got the opprtunity to learn a lot from some very talented people, and gained a lot of experience in managing my time for the 3 months of the working period. A huge thank you to my organisation, mentors and Google itself for giving me this opportunity and supporting me through it.
 
 ### Issues
 An exhaustive list of all issues can be found [here](https://github.com/JdeRobot/VisualCircuit/issues?q=is%3Aissue+author%3Atoshan-luktuke)
